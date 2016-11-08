@@ -27,5 +27,10 @@ void draw()
   image(keyboard, width/4.5, height/-15);
   iskeyboardpressed=true;
   iskeyboardpressed=false;
+  
 
-}
+void keyPressed()
+{
+  if ( key == 'a')song.wav;
+
+if (key == 's')keyboard; 

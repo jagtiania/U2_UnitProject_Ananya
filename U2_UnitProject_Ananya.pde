@@ -26,5 +26,6 @@ void draw()
   fill(40,20,100);
   image(keyboard, width/4.5, height/-15);
   iskeyboardpressed=true;
+  iskeyboardpressed=false;
 
 }

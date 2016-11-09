@@ -39,7 +39,7 @@ void keyPressed()
     pianokey.play();
   }
 
-//if (key == 's')
-//{keyboard = key;
-//}
+if (key == 's')
+    pianokey.play();
+
 }

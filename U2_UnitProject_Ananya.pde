@@ -4,8 +4,11 @@ import ddf.minim.effects.*;
 import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
+
+import processing.sound.*;
+
 Minim minim;
-AudioPlayer pianokey;
+SoundFile pianokey;
 AudioInput input;
 boolean iskeyboardpressed=false;
 PImage keyboard;
@@ -17,7 +20,7 @@ void setup()
   background(255);
 keyboard= loadImage("keyboard.png");
 minim = new Minim(this);
-pianokey= minim.loadFile("song.wav");
+pianokey = new SoundFile (this, "song.mp3");
 input = minim.getLineIn();
 
 }
@@ -28,9 +31,15 @@ void draw()
   iskeyboardpressed=true;
   iskeyboardpressed=false;
   
-
+}
 void keyPressed()
 {
-  if ( key == 'a')song.wav;
+  if ( key == 'a')
+  {
+    pianokey.play();
+  }
 
-if (key == 's')keyboard; 
+//if (key == 's')
+//{keyboard = key;
+//}
+}
